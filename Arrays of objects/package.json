@@ -1,11 +1,11 @@
 {
-  "name": "ciklas-cikle",
+  "name": "arrays-of-objects",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "KTU6.1.js",
+  "main": "task1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
