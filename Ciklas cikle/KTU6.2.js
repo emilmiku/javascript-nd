@@ -22,6 +22,8 @@ for (let i = 0; i < studentCount; i++) {
 
 fs.appendFileSync("KTU6.2Rezultatai.txt", `${total}`, { encoding: "utf8" });
 
+// version 2
+
 // const data = fs.readFileSync("KTU6.2Duomenys.txt", { encoding: "utf8" });
 
 // const studentInfo = data.split("\n").slice(1);
