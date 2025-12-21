@@ -1,0 +1,416 @@
+##1 Please loop this entire array and print the positions where the string "Waldo" is found. Count how many "Waldo" are in array. 
+
+```javascript
+let people = [ 'Lebron','Aaliyah','Diamond','Dominique','Aliyah','Jazmin','Darnell','Hatfield','Hawkins','Hayden','Hayes','Haynes','Hays','Head','Heath','Hebert','Henderson','Hendricks','Hendrix','Henry','Hensley','Henson','Herman','Hernandez','Herrera','Herring','Hess','Hester','Hewitt','Hickman','Hicks','Higgins','Hill','Hines','Hinton','Hobbs','Hodge','Hodges','Hoffman','Hogan','Holcomb','Holden','Holder','Holland','Holloway','Holman','Holmes','Holt','Hood','Hooper','Hoover','Hopkins','Hopper','Horn','Horne','Horton','House','Houston','Howard','Howe','Howell','Hubbard','Huber','Hudson','Huff','Waldo','Hughes','Hull','Humphrey','Hunt','Hunter','Hurley','Hurst','Hutchinson','Hyde','Ingram','Irwin','Jackson','Jacobs','Jacobson','James','Jarvis','Jefferson','Jenkins','Jennings','Jensen','Jimenez','Johns','Johnson','Johnston','Jones','Jordan','Joseph','Joyce','Joyner','Juarez','Justice','Kane','Kaufman','Keith','Keller','Kelley','Kelly','Kemp','Kennedy','Kent','Kerr','Key','Kidd','Kim','King','Kinney','Kirby','Kirk','Kirkland','Klein','Kline','Knapp','Knight','Knowles','Knox','Koch','Kramer','Lamb','Lambert','Lancaster','Landry','Lane','Lang','Langley','Lara','Larsen','Larson','Lawrence','Lawson','Le','Leach','Leblanc','Lee','Leon','Leonard','Lester','Levine','Levy','Lewis','Lindsay','Lindsey','Little','Livingston','Lloyd','Logan','Long','Lopez','Lott','Love','Lowe','Lowery','Lucas','Luna','Lynch','Lynn','Lyons','Macdonald','Macias','Mack','Madden','Maddox','Maldonado','Malone','Mann','Manning','Marks','Marquez','Marsh','Marshall','Martin','Martinez','Mason','Massey','Mathews','Mathis','Matthews','Maxwell','May','Mayer','Maynard','Mayo','Mays','Mcbride','Mccall','Mccarthy','Mccarty','Mcclain','Mcclure','Mcconnell','Mccormick','Mccoy','Mccray','Waldo','Mcdaniel','Mcdonald','Mcdowell','Mcfadden','Mcfarland','Mcgee','Mcgowan','Mcguire','Mcintosh','Mcintyre','Mckay','Mckee','Mckenzie','Mckinney','Mcknight','Mclaughlin','Mclean','Mcleod','Mcmahon','Mcmillan','Mcneil','Mcpherson','Meadows','Medina','Mejia','Melendez','Melton','Mendez','Mendoza','Mercado','Mercer','Merrill','Merritt','Meyer','Meyers','Michael','Middleton','Miles','Miller','Mills','Miranda','Mitchell','Molina','Monroe','Lucas','Jake','Scott','Amy','Molly','Hannah','Lucas'] ;
+```
+
+##2 Declaring the array
+
+let myArray = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+
+1. print the 3rd item here
+2. change the 'thursday' value to null here
+3. print the position of step 2
+
+---
+
+##3 Write a function `max` that takes an array of numbers returns the highest number in the array.
+
+---
+
+##4 Write a function `sumNumbers` which is given an array of numbers and returns the sum of the numbers. Do the same with reduce() method.
+
+- Example:
+  - sumNumbers([1, 4, 8]) --> 13
+
+---
+
+##5 Write function `allPositive` which is given an array of numbers and returns true if _every_ element is positive and false otherwise.
+
+- Example:
+  - allPositive([1, 2, 3, 4, 5]); --> true
+  - allPositive([1, 2, -3, 4, 5]); --> false
+  - allPositive([0, 0, 1]); --> false
+
+---
+
+##6 Given an array of numbers, return their product. Use reduce metod.
+
+- Example
+  - product([2, 4, 6]); // => 48 (i.e., 2 _ 4 _ 6)
+  - product([-10, 10]); // => -100 (i.e., -10 \* 10)
+
+---
+
+##7 Write function `anyPositive` which is given an array of numbers and returns true if _any_ element is positive and false otherwise.
+
+- Example:
+  - anyPositive([1, 2, 3, 4, 5]); --> true
+  - anyPositive([1, 2, -3, 4, 5]); --> true
+  - anyPositive([0, 0, 1]); --> true
+  - anyPositive([-10, -10, -10]); --> false
+  - anyPositive([-10, -10, 1]); --> true
+
+---
+
+##8 Write a function `positives` which is given an array of numbers and returns a new array containing only the positive numbers within the given array.
+
+- Examples:
+  - positives([1, -3, 5, -3, 0]) --> [1, 5]
+  - positives([1, 2, 3]) --> [1, 2, 3]
+  - positives([-1, -2, -3]) --> []
+
+---
+
+##9 Write function `mean`, which takes an array of numbers and returns their mean. We use "mean" instead of average because "average" can mean many things — mean, median, or mode while mean only ever means one thing.
+
+The mean of three numbers a,b,c is (a + b + c) / 3.
+The mean of four numbers a,b,c,d is (a + b + c + d) / 4.
+etc.
+
+See https://en.wikipedia.org/wiki/Arithmetic_mean
+
+- Examples:
+  - mean([30, 10, 20]); --> 20 (i.e., (30 + 10 + 20) / 3)
+  - mean([-10, 10]); --> 0 (i.e., (-10 + 10) / 2)
+
+---
+
+##10 Write a function `evens` which takes an array of numbers and returns a new array containing only the even numbers in the given array.
+
+---
+
+##11 Write a function `odds` which takes an array of numbers and returns a new array containing only the odd numbers in the given array.
+
+---
+
+##12 Write a function `integers` which takes an array of numbers and returns a new array containing only the integers in the given array.
+
+- Example:
+  - integers([3.14, 2.4, 7, 8.1, 2]) --> [7, 2]
+
+---
+
+##13 Write functions `countEvens` which takes an array of integers and returns the count of even integers in the array.
+
+- Example:
+  - countEvens([1, 2, 3, 4, 5]); --> 2
+  - countEvens([10, 10, 10]); --> 3
+  - countEvens([1, 1, 1, 2]); --> 2
+
+---
+
+##14 Write function `countLessThan` whitch takes an array of numbers and a threshold number and return the count of elements in the array strictly less than the threshold number.
+
+"Strictly less than" means we want numbers less than (<) and not less than or equal to (<=).
+
+- Example:
+  - countLessThan([1, 2, 3, 4, 5], 2); --> 1
+  - countLessThan([1, 2, 3, 4, 5], 17); --> 5
+  - countLessThan([1, 2, 1, 2, 3, 4, 1, 2, 1], 1); --> 0
+  - countLessThan([10, 10, 10, -10, 15, 7], 10); --> 2
+
+---
+
+##15 Write a function `squareDance` which takes an array of numbers and returns a new array containing the result of squaring each of the numbers in the given array.
+
+- Example:
+  - squareDance([1, 2, 3]) --> [1, 4, 9]
+
+---
+
+##16 Given two arrays, write function `glueArrays` which returns a new array that is a concatenation of the two given arrays.
+
+- Example:
+  - glueArrays([1, 2, 3], [4, 5, 6]); --> [1, 2, 3, 4, 5, 6]
+  - glueArrays([-10, undefined], [true, 'waffles']); --> [-10, undefined, true, 'waffles']
+  - glueArrays([], []); --> []
+  - glueArrays([20, 104], []); --> [20, 104]
+  - glueArrays([], ['hello', 'world']); --> ['hello', 'world']
+
+---
+
+##17 Given an array and a value, write function `countValue` which returns the number of times that value is found in the array.
+
+- Example:
+  - countValue([1, 2, 3, 4, 5], 2); --> 1
+  - countValue([1, 2, 3, 4, 5], 17); --> 0
+  - countValue([1, 2, 1, 2, 3, 4, 1, 2, 1], 1); --> 4
+  - countValue([10, 10, 10, -10], 10); --> 3
+  - countValue(['hello', bananas', 'hello'], 'hello'); --> 2
+  - countValue(['hello', bananas', 'hello'], 'giraffe'); --> 0
+
+---
+
+##18 Given an array and a value, write function `findInHaystack` which returns true if the value is found in the array and false otherwise.
+
+The array doesn't need to contain a single type of data.
+
+When searching an array for something, it's common to refer to the array as the "haystack" and the thing being searched for as the "needle", as in, "Looking for a needle in a haystack."
+
+- Example:
+  - findInHaystack([1, 2, 30, -10], 480); --> false
+  - findInHaystack([1, 2, 30, -10], 30); --> true
+  - findInHaystack(['waffle', 'giraffe', 'banana'], 'giraffe'); --> true
+  - findInHaystack(['waffle', 'giraffe', 'banana'], 'lemons'); --> false
+
+---
+
+##19 Given an array and a value, write function `firstIndexOf` which returns the index of the first occurence of the value. If the value is not found, returns -1.
+
+The array doesn't need to contain a single type of data.
+
+- Example:
+  - firstIndexOf([10, 20, 30, 20], 20); --> 1
+  - firstIndexOf([10, 20, 30, 20], 17); --> -1
+  - firstIndexOf(['giraffe', giraffe', 'banana'], 'giraffe'); --> 0
+  - firstIndexOf(['giraffe', giraffe', 'banana'], 'banana'); --> 2
+
+---
+
+##20 Write a function `isVowel` that takes a character (i.e. a string of length 1) as input and returns true if it is a vowel, false otherwise.
+
+- Useful resource: -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+- Examples:
+  - isVowel('c') --> false
+  - isVowel('e') --> true
+  - isVowel('A') --> true
+  - sVowel(99) --> false
+  - isVowel({e: "Elephant"}) --> false
+
+---
+
+##21 Write the `removeZAnimals` function as described below:
+
+```javascript
+function removeZAnimals() {
+  // 1) declare an array with some strings
+  const animals = ["alligator", "zebra", "crocodile", "giraffe"];
+
+  // create an empty array (we will fill this with strings from the previous array)
+  let animalsWithoutZ = [];
+
+  // 2) loop through "animals"
+
+  // 3) add every item in "animals" to "animalsWithoutZ" unless the animal name contains the letter "z"
+
+  // 4) return "animalsWithoutZ"
+}
+```
+
+- **HINT:** remember you can search within a string
+
+---
+
+##22 Write a function `removeAnyWordWithZ` that takes 1 argument: an array of strings
+
+It should return a new array that has all of the items in the passed-in array minus any words that contain the letter `z` or `Z` (case-insensitive).
+
+---
+
+##23 Write a function `removeWordsWithChar` that takes 2 arguments:
+
+- an array of strings
+- a string of length 1 (ie: a single character)
+
+- It should return a new array that has all of the items in the first argument except those that contain a character in the second argument (case-insensitive).
+
+- Examples:
+  - removeWordsWithChar(['aaa', 'bbb', 'ccc'], 'b') --> ['aaa', 'ccc']
+  - removeWordsWithChar(['pizza', 'beer', 'cheese'], 'E') --> ['pizza']
+
+---
+
+##24 Write a function `reverse` that computes the reversal of a string.
+
+- Example:
+  - reverse("skoob") --> "books"
+
+---
+
+## Write a function `findLongestWord` that takes a string of words and returns the longest word in that string. If there are multiple words with the same maximum length return the first longest word.
+
+- Example:
+  - findLongestWord('a book full of dogs') --> 'book'
+
+---
+
+##25 Write a function called `nicer`. It should clean up the language in its input sentence.
+
+- Forbidden words include
+
+  - heck,
+  - darn,
+  - dang,
+  - crappy.
+
+- Example:
+  - nicer('mom get the heck in here and bring me a darn sandwich.')--> 'mom get the in here and bring me a sandwich.'
+
+---
+
+##26 Write a function called `capitalizeAll` It should take as input a sentence and capitalize the first letter of every word in the sentence.
+
+- Examples:
+  - capitalizeAll('hello world') --> 'Hello World'
+  - capitalizeAll('every day is like sunday') --> 'Every Day Is Like Sunday'
+
+---
+
+##27 Write a function called `split` that does the same thing as String.split
+
+It should take two inputs:
+
+- a string and
+- a delimiter string
+
+Do not use the native .split() method for this. Your task is to reverse-engineer .split() and write your own.
+
+- Examples:
+  - split('a-b-c', '-') --> ['a', 'b', 'c']
+  - split('APPLExxBANANAxxCHERRY', 'xx') --> ['APPLE', 'BANANA', 'CHERRY']
+  - split('xyz', 'r') --> ['xyz']
+
+---
+
+##28 Write a function `longLongVowels` which is given a string, and returns a version of that string extending any long vowels to 5 characters.
+
+- Examples:
+  - longLongVowels('Good')--> 'Goooood'
+  - longLongVowels('Cheese') --> 'Cheeeeese'
+  - longLongVowels('Man') --> 'Man'
+
+---
+
+##29 Write a function `leetspeak` Challenge 4:which is given a string, and returns the leetspeak equivalent of the string.
+
+- To convert text to its leetspeak version, make the following substitutions:
+
+  - A => 4,
+  - E => 3,
+  - G => 6,
+  - I => 1,
+  - O => 0,
+  - S => 5,
+  - T => 7
+
+- HINT: What is the best data structure to represent the substitutions?
+
+- Examples:
+  - leetspeak('Leet') --> "l337"
+  - leetspeak('ORANGE') --> "0r4n63"
+
+---
+
+##30 Write a function `recognizeEmployees` that takes two arguments:
+
+- 1. an array of names of people to be recognized
+- 2. an array of employees of the month
+
+Return an array telling everyone that they did a great job, except employees of the month did an outstanding job.
+
+- Examples:
+
+  - recognizeEmployees(['Susan', 'Anthony', 'Bill'], ['Bill'])
+    --> ['Great job, Susan!', 'Great job, Anthony!', 'Outstanding job, Bill!']
+
+  - recognizeEmployees(['Susan',Challenge 4: 'Anthony', 'Bill'], ['Bill', 'Susan'])
+    --> ['Outstanding job, Susan!', 'Great job, Anthony!', 'Outstanding job, Bill!']
+
+  - recognizeEmployees(['Susan', 'Anthony', 'Bill'], ['Jennifer', 'Dylan'])
+    --> ['Great job, Susan!', 'Great job, Anthony!', 'Great job, Bill!']
+
+---
+
+##31 Write a function `alphaSort` that sorts an array of strings alphabetically.
+
+- Examples:
+  - alphaSort(['b', 'a', 'c']) --> ['a', 'b', 'c']
+
+---
+
+##32 Write a function `strLengthSort` that sorts an array of strings by how long each string is. Put the shortest strings first.
+
+- Examples:
+  - strLengthSort(['Apple', 'Banana', 'Cherry']) --> ['Apple', 'Cherry', 'Banana']
+
+---
+
+##33 Write a function `sumSort`. Given an array of array of numbers like:
+
+var arr = [
+[1, 3, 4],
+[2, 4, 6, 8],
+[3, 6]
+];
+
+Sort the array by the sum of each inner array. For the above example, the
+respective sums for each inner array is 8, 20, and 9.
+
+- Example:
+  - sumSort([
+    [9, 1, 9],
+    [2],
+    [4, 5]
+    ]) --> [[2], [4, 5], [9, 1, 9]]
+
+---
+
+##34 Write a function `sortArray` that takes an array of numbers as input and sorts them in ascending order and returns.
+
+- using the bubble sort algorithm,
+- using the selection sort algorithm
+- using the insertion sort algorithm
+- using merge sort algorithm.
+
+---
+
+##35 You can use the map method to transform each item in an array into something else. map() returns a new array leaving the original array unchanged.
+
+##36 We have an array of numbers that are stored as strings.
+
+// Initial: [ '1', '2', '3', '4', '5' ];
+
+Let's transform these strings into numbers using the map method.
+// Result: [ 1, 2, 3, 4, 5 ];
+
+- Then store the new array we created in a variable.
+
+  ***
+
+## We have an array of words that are stored in as strings.
+
+// Initial: [ 'apple', 'pear', 'cherry' ];
+
+Let's capitalize all the words we have within this array.\*
+// Result: [ 'APPLE', 'PEAR', 'CHERRY' ];
+
+Then store the new array we created in a variable.
+
+- The words will still be strings, just as before.
+
+---
+
+##37 Turn this list of numbers into price strings with two digits and a dollar sign at the beginning.
+
+// Initial: [5, 4.23, 6.4, 8.09, 3.20];
+
+Dont forget to:
+
+- Turn the numbers into strings
+- Concatenate/ add the dollar sign
+- Make the prices have decimals
+- Store the new array we created in a variable
+  // Result: [ '$5.00', '$4.23', '$6.40', '$8.09', '$3.20' ];
+
+---
+
+##38 Use the map method on the daysOfWeek array, creating a new array of abbreviated week days.
+
+- Each abbreviated string should be the first three letters of the long version in daysOfWeek.
+- Store the new array in the variable abbreviatedDays.
+
+// Initial: const daysOfWeek = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
+
+// Result: const daysOfWeek = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ];
