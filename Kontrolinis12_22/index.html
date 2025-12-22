@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="task7.js" defer></script>
+</head>
+<body>
+    <div
+        style="background-color: rgb(165, 195, 229); width: fit-content; margin: 20px; padding: 20px;">
+        <h1>Temperature Converter</h1>
+        <form>
+            <label for="temperature">Enter the temperature to convert</label><br>
+            <input type="text" id="temperature" name="temperature">
+            <select name="scales" id="scales">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+            </select>
+            <input type="submit" value="Convert">
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
