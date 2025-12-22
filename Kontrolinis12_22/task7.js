@@ -31,29 +31,28 @@ The user should be able to:
    8° Celsius
    ``` */
 "use strict";
-/* BMI pavyzdys: 
+
 const form = document.querySelector("form");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  let height = Number(document.getElementById("height").value);
-  let weight = Number(document.getElementById("weight").value);
-  let BMI = weight / (height / 100) ** 2;
-  let BMIgroup = "";
-
-  if (BMI < 18.5) {
-    BMIgroup = "Underweight";
-  } else if (BMI < 25) {
-    BMIgroup = "Healthy Weight";
-  } else if (BMI < 30) {
-    BMIgroup = "Overweight";
-  } else {
-    BMIgroup = "Obesity";
+  let givenNumber = Number(document.getElementById("temperature").value);
+  let celsiusScale = String(
+    document.getElementById("scales").selectedOptions[0].value
+  );
+  let fahrenheitScale = String(
+    document.getElementById("scales").selectedOptions[1].value
+  );
+  let chosenScale = "";
+  let answer = 0;
+  if (chosenScale === celsiusScale) {
+    answer = Number(givenNumber * (9 / 5) + 32);
+  } else if (chosenScale === fahrenheitScale) {
+    answer = Number((givenNumber - 32) * (5 / 9));
   }
-
-  const resultEl = document.getElementById("result");
-  resultEl.innerHTML = `${BMIgroup} - BMI: ${BMI.toFixed(2)}`;
-}); */
+  const result = document.getElementById("result");
+  result.innerHTML = `${answer} °`;
+});
 
 //  °C = (°F - 32) × 5/9
 //°F = (°C × 9/5) + 32
