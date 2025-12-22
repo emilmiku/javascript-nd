@@ -47,3 +47,28 @@ Use **condition statements** (`if`, `else if`, `else`) to assign a **messageType
 - Must process each notification (with a loop _or_ `map`).
 - Must correctly apply the **"read overrides everything"** rule. */
 "use strict";
+
+const notifications = [
+  { text: "Low battery", priority: 3, read: false },
+  { text: "New message from Anna", priority: 1, read: true },
+  { text: "System update available", priority: 2, read: false },
+  { text: "Storage almost full", priority: 3, read: true },
+  { text: "Friend request", priority: 1, read: false },
+];
+
+const result = notifications.map((notification) => {
+  let messageType = "";
+  if (notification.read === true) {
+    messageType = "read";
+  } else if (notification.priority === 3) {
+    messageType = "critical";
+  } else if (notification.priority === 2) {
+    messageType = "warning";
+  } else {
+    messageType = "normal";
+  }
+
+  return { ...notification, messageType };
+});
+
+console.log(result);
