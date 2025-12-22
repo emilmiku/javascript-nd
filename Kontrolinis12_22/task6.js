@@ -38,3 +38,15 @@ Use **`reduce()`** to transform the list of arrays into **one single flat array*
 - The output must be a **single flattened array**.
  */
 "use strict";
+
+
+const arrOfArrs = [
+  ["aaron", "ake", "anna", "aje"],
+  ["becky", "ben", "bright"],
+  ["cara", "chris"],
+  ["david", "daniel", "danielle", "djenue"],
+];
+
+const flattenedArray = arrOfArrs.reduce((a, b) => a.concat(b));
+
+console.log(flattenedArray);

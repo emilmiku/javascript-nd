@@ -24,3 +24,24 @@ Write a loop (or multiple loops) that analyzes the string and produces an object
 "use strict";
 
 const text = "Hello123! Welcome to JS 2025.";
+
+const results = {
+  letters: 0,
+  digits: 0,
+  spaces: 0,
+  symbols: 0,
+};
+
+for (const char of text) {
+  if ((char >= "A" && char <= "Z") || (char >= "a" && char <= "z")) {
+    results.letters++;
+  } else if (char >= "0" && char <= "9") {
+    results.digits++;
+  } else if (char === " ") {
+    results.spaces++;
+  } else {
+    results.symbols++;
+  }
+}
+
+console.log(results);
